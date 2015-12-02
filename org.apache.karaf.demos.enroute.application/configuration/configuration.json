@@ -1,0 +1,6 @@
+[
+  {
+    "service.pid":"org.apache.karaf.demos.enroute.unrelated",
+    "duration":"10000"
+  }
+]

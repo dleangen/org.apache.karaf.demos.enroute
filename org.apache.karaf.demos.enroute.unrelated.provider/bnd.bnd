@@ -1,0 +1,18 @@
+Bundle-Version:					1.0.0.${tstamp}
+Bundle-Description: Just does something completely unrelated.
+
+Private-Package:  \
+	org.apache.karaf.demos.enroute.unrelated.provider
+	
+-buildpath:  \
+	osgi.enroute.base.api;version=1.0
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=org.apache.karaf.demos.enroute.unrelated.provider)'
+	
+-runbundles: \
+	${error;Resolve first}
+Bundle-Name: Unrelated Service

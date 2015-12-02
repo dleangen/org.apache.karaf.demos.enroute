@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1449032523000" name="Release" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.karaf.demos.enroute.a.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201512010841"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="57e86eec77b151b622aacc62103319913614820467233c822668c021bf5ba28e"/>
+      <attribute name="url" value="org.apache.karaf.demos.enroute.a.api/org.apache.karaf.demos.enroute.a.api-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="4229"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.karaf.demos.enroute.a.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010841"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.karaf.demos.enroute.a.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010841"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.karaf.demos.enroute.a.api"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.karaf.demos.enroute.a.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010841"/>
+    </capability>
+    <requirement namespace="compile-only"/>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.karaf.demos.enroute.a.provider"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201512010842"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="5265694c160be628fc85096ce8a7d025a7fd547222959e40a6313a742e8aeec7"/>
+      <attribute name="url" value="org.apache.karaf.demos.enroute.a.provider/org.apache.karaf.demos.enroute.a.provider-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="6546"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.karaf.demos.enroute.a.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010842"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.karaf.demos.enroute.a.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010842"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.karaf.demos.enroute.a.api"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.karaf.demos.enroute.a.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010842"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.apache.karaf.demos.enroute.a.api.AService"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.apache.karaf.demos.enroute.a.api.AService"/>
+      <directive name="uses" value="org.apache.karaf.demos.enroute.a.api"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.karaf.demos.enroute.a.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.karaf.demos.enroute.application"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201512020501"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="17a7df11d73b50aa6b967927ecad69f2fe728defff9722df53c749cbd4dfc19c"/>
+      <attribute name="url" value="org.apache.karaf.demos.enroute.application/org.apache.karaf.demos.enroute.application-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="6052"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.karaf.demos.enroute.application"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020501"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.karaf.demos.enroute.application"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020501"/>
+    </capability>
+    <capability namespace="karaf.identity">
+      <attribute name="description" value="Demo to show how to deploy an enRoute application with Karaf"/>
+      <attribute name="karaf.identity" value="enroute-demo"/>
+      <attribute name="type" value="karaf.feature"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+    </capability>
+    <requirement namespace="namespace.custom">
+      <directive name="filter" value="(&amp;(service=c)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="namespace.custom">
+      <directive name="filter" value="(&amp;(service=unrelated)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.enroute.configurer)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.karaf.demos.enroute.b.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201512010844"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="a63e3a31f2b1e4ea4d4e310922b3b5a357fcf6cc5be4287fd565ac698d5337cf"/>
+      <attribute name="url" value="org.apache.karaf.demos.enroute.b.api/org.apache.karaf.demos.enroute.b.api-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="4247"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.karaf.demos.enroute.b.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010844"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.karaf.demos.enroute.b.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010844"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.karaf.demos.enroute.b.api"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.karaf.demos.enroute.b.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512010844"/>
+    </capability>
+    <requirement namespace="compile-only"/>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.karaf.demos.enroute.bc.provider"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="8c95f7c502cff222281b2eb92c154285a30b32ce5d04b0b3ebb4e99e69585397"/>
+      <attribute name="url" value="org.apache.karaf.demos.enroute.bc.provider/org.apache.karaf.demos.enroute.bc.provider-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="12390"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.karaf.demos.enroute.bc.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.karaf.demos.enroute.bc.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.karaf.demos.enroute.b.api"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.karaf.demos.enroute.bc.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.karaf.demos.enroute.c.api"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.karaf.demos.enroute.bc.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.apache.karaf.demos.enroute.b.api.BService"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.apache.karaf.demos.enroute.c.api.CService"/>
+    </capability>
+    <capability namespace="namespace.custom">
+      <attribute name="service" value="c"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.apache.karaf.demos.enroute.b.api.BService"/>
+      <directive name="uses" value="org.apache.karaf.demos.enroute.b.api"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" type="List&lt;String&gt;" value="org.apache.karaf.demos.enroute.c.api.CService"/>
+      <directive name="uses" value="org.apache.karaf.demos.enroute.c.api"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.karaf.demos.enroute.a.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.karaf.demos.enroute.b.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.karaf.demos.enroute.c.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.apache.karaf.demos.enroute.a.api.AService)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.apache.karaf.demos.enroute.b.api.BService)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.apache.karaf.demos.enroute.a.api.AService)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.apache.karaf.demos.enroute.b.api.BService)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.karaf.demos.enroute.c.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="fa44d803149a1b448b19ffd8f8277c08473c2a8480324e6730314b30dfa763ad"/>
+      <attribute name="url" value="org.apache.karaf.demos.enroute.c.api/org.apache.karaf.demos.enroute.c.api-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="5301"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.karaf.demos.enroute.c.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.karaf.demos.enroute.c.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.karaf.demos.enroute.c.api"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.karaf.demos.enroute.c.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020457"/>
+    </capability>
+    <capability namespace="namespace.custom">
+      <attribute name="service" value="c"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+    </capability>
+    <requirement namespace="compile-only"/>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.karaf.demos.enroute.unrelated.provider"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201512020500"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="f1e14a163436f3f5f79889940eae1a10368252aff3e016a96ba7943e59e800f4"/>
+      <attribute name="url" value="org.apache.karaf.demos.enroute.unrelated.provider/org.apache.karaf.demos.enroute.unrelated.provider-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="5840"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.karaf.demos.enroute.unrelated.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020500"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.karaf.demos.enroute.unrelated.provider"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201512020500"/>
+    </capability>
+    <capability namespace="namespace.custom">
+      <attribute name="service" value="unrelated"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+  </resource>
+</repository>

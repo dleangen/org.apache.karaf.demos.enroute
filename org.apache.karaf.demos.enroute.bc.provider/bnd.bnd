@@ -1,0 +1,26 @@
+Bundle-Version:					1.0.0.${tstamp}
+Bundle-Description: Provides both the B service and the C service
+
+Private-Package:  \
+	org.apache.karaf.enroute.demos.bc.provider
+	
+-buildpath: \
+	osgi.enroute.base.api;version=1.0,\
+	org.apache.karaf.demos.enroute.b.api;version=latest,\
+	org.apache.karaf.demos.enroute.c.api;version=latest,\
+	org.apache.karaf.demos.enroute.a.api;version=latest,\
+	biz.aQute.junit
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=org.apache.karaf.enroute.bc.provider)'
+	
+-runbundles: \
+	${error;Resolve first}
+
+Bundle-Name: B and C Provider
+Export-Package: \
+	org.apache.karaf.demos.enroute.b.api,\
+	org.apache.karaf.demos.enroute.c.api
